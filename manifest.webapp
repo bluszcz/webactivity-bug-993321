@@ -1,0 +1,25 @@
+{
+  "name": "Web Activity Share Problem",
+  "description": "Demonstration of the bug https://bugzilla.mozilla.org/show_bug.cgi?id=993321",
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "activities": {
+      "share": {
+            "href": "./index.html",
+            "disposition": "inline",
+            "filters": {
+              "type": ["image/*","image/jpeg","image/png"]
+            },
+            "returnValue": true
+          }
+  },
+  "icons": {
+    "128": "/img/icon-128.png",
+    "60": "/img/icon-60.png"
+  },
+  "developer": {
+    "name": "Rafal Zawadzki",
+    "url": "https://picup.it/"
+  },
+  "default_locale": "en"
+}
